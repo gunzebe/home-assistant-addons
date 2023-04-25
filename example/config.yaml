@@ -14,7 +14,25 @@ init: false
 map:
   - share:rw
 options:
-  message: "Hello world..."
+  host:
+    required: true
+    description: 192.168.178.50
+    type: string
+  port:
+    required: true
+    description: 80
+    type: integer
+    default: 80
+services:
+  start:
+    description: Start the Busch Jäger iNet Radio Add-On
+  stop:
+    description: Stop the Busch Jäger iNet Radio Add-On
+  restart:
+    description: Restart the Busch Jäger iNet Radio Add-On
+  status:
+    description: Get the status of the Busch Jäger iNet Radio Add-On
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
+log_level: info
