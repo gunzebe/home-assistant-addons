@@ -16,22 +16,13 @@ map:
 options:
   host:
     required: true
-    description: 192.168.178.50
+    description: The IP address or hostname of the Busch Jäger iNet Radio
     type: string
   port:
     required: true
-    description: 80
+    description: The port number of the Busch Jäger iNet Radio web interface
     type: integer
     default: 80
-services:
-  start:
-    description: Start the Busch Jäger iNet Radio Add-On
-  stop:
-    description: Stop the Busch Jäger iNet Radio Add-On
-  restart:
-    description: Restart the Busch Jäger iNet Radio Add-On
-  status:
-    description: Get the status of the Busch Jäger iNet Radio Add-On
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
