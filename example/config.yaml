@@ -26,4 +26,3 @@ options:
 schema:
   host: "str?"
   port: int
-image: "ghcr.io/home-assistant/{arch}-addon-example"
