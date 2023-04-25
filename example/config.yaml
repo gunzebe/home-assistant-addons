@@ -24,5 +24,6 @@ options:
     type: integer
     default: 80
 schema:
-  message: "str?"
+  host: "str?"
+  port: int
 image: "ghcr.io/home-assistant/{arch}-addon-example"
