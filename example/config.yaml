@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Busch Jäger iNet Radio
-version: "1.0.1"
+version: "1.0.0"
 slug: example
 description: Home Assistant Add-On for controlling Busch Jäger iNet Radio
 url: "https://github.com/gunzebe/home-assistant-addons/tree/main/example"
@@ -26,3 +26,4 @@ options:
 schema:
   host: "str?"
   port: int
+image: "ghcr.io/home-assistant/{arch}-addon-example"
